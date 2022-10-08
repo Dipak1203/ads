@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&family=Noto+Sans+JP:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    --back:rgb(5, 49, 143);
+    --back2:rgb(184, 1, 10);
+}
+
+a{
+    text-decoration: none;
+}
+.top-content{
+    height: 30px;
+    background: var(--back);
+    color:white;
+}
+
+.top-content .social-link{
+    font-size: 20px;
+    text-align: center;
+    padding:0 20px;
+    color: white;
+}
+.top-content .social-link a {
+    color: white;
+}
+.top-content .social-link a i{
+    font-size: 25px;
+    color: white;
+    padding:0 10px;
+}
+
+.top-content .social-link a i:hover{
+    background-color: var(--back2);
+    color: #fff;
+}
+
+@media screen and (max-width:400px) {
+
+    .top-content{
+        height: 50px;
+    }
+    .top-content .social-link a i{
+        padding: 2px;
+    }
+}
+
+
+.marguee{
+    height: 2rem;
+    background-color: var(--back2);
+    color: white;
+    align-items: center;
+    font-size:20px;
+}
+
+
+
+.logo img{
+    margin-left: -20px!important;
+   width: 147px;
+   height: 124px;
+}
+
+
+
+.search-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address{
+    top: 10px;
+    color: var(--back);
+    font-weight: 900;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:678px) {
+    .address{
+        font-size: 18px;
+    }
+}
+
+
+
+h4{
+    font-weight: 700;
+    color: var(--back);
+}
+
+
+
+/* ------------------------------ Navbar style-------------------- */
+
+.navbar {
+    background-color: var(--back);
+    border-bottom: 1px solid #fff;
+    height: 50px;
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+.navbar-toggler{
+    background: var(--back2);
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.nav-item {
+    /* margin-left: 3rem; */
+    list-style: none;
+    transition: 0.3s;
+    margin-left: 90px;
+}
+
+.nav-link{
+    font-size:17px;
+    font-weight: 400;
+    color: var(--back);
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item:hover{
+    background-color: var(--back2);
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+.nav-item .nav-link:hover{
+    color: #fff;
+    
+}
+.nav-item #home{
+    background-color: var(--back2);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* --------------- Teacher Section */
+
+.team-section img{
+    border-top-left-radius: 5px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:768px) {
+    .carousel-inner .cimg{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+.paragraph{
+    height: 300px;
+}
+
+/* Middle Section */
+.btn:hover{
+  background-color: var(--back);
+  color:#fff ;
+}
+@media screen and (max-width:768px) {
+    .paragraph a,p{
+        font-size: 16px;
+    }
+    .paragraph{
+        align-items: center;
+    }
+}
+
+
+.join{
+    text-align: center;
+    font-size: 23px;
+    color: var(--back2);
+}
+
+
+
+/* Footer section */
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#fff;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:var(--back);
+  color:#fff;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear;
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
